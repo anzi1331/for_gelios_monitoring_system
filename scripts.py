@@ -3,6 +3,8 @@ import json
 
 #Запрос токена. В функцию передаем логин и пароль учетной записи, для которой получает токен
 def get_token(login: str, psw: str) -> str:
+    """ request for a token. accepts the username and password of the account. Returns a token or an error
+    """
     url = 'https://admin.geliospro.com/sdk/?'
     params = {
     'login': login,
